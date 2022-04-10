@@ -16,7 +16,7 @@
   display: block;
   padding: 10px 0;
   font-size: 0.9rem;
-  line-height: 25.59px;
+  line-height: 1.25;
   color: #035755;
 }
 
@@ -268,8 +268,52 @@ img {
   #toggle:checked ~ .page-header__container .navigation {
     left: 0;
   }
+  .nav-list {
+    margin-right: 0;
+  }
+  .nav-list__item:not(:first-child) {
+    margin-left: 0;
+  }
   .contact-link:hover, .contact-link:focus {
     background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 1rem;
+  }
+  .logo img {
+    margin-right: 10px;
+    height: 100%;
+  }
+  .nav-list {
+    margin-right: 40px;
+  }
+  .nav-list__item:not(:first-child) {
+    margin-left: 50px;
+  }
+  .nav-list__link {
+    font-size: 1rem;
+  }
+  .nav-list__link--current {
+    font-size: 1rem;
+  }
+  .contact-link {
+    border: 2px solid #fa5652;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 155px;
+    height: 55px;
+    border-radius: 45px;
+    font-size: 1rem;
   }
 }
 

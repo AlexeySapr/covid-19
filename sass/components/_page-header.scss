@@ -145,6 +145,11 @@
 
   .nav-list {
     @extend %columnFlex;
+    margin-right: 0;
+
+    &__item:not(:first-child) {
+      margin-left: 0;
+    }
   }
 
   .contact-link {
@@ -156,4 +161,40 @@
 }
 
 @media screen and (min-width: $desktop) {
+  .logo {
+    font-size: 1rem;
+
+    & img {
+      margin-right: 10px;
+      height: 100%;
+    }
+  }
+
+  .nav-list {
+    margin-right: 40px;
+
+    &__item:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+
+  .nav-list__link {
+    font-size: 1rem;
+
+    &--current {
+      font-size: 1rem;
+    }
+  }
+
+  .contact-link {
+    border: 2px solid $subtitle-text-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 55px;
+    border-radius: 45px;
+
+    font-size: 1rem;
+  }
 }
