@@ -1,0 +1,6 @@
+@mixin ellipseAnimation($name, $duration) {
+  animation-name: $name;
+  animation-timing-function: linear;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+}
