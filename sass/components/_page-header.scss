@@ -1,22 +1,94 @@
+//mob menu btn
+#toggle {
+  display: none;
+}
+
+.mobile-menu-label {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+.mobile-menu-label span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: $first-accent-color;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: $tablet) {
+  .mobile-menu-label {
+    display: block;
+
+    #toggle:checked + & > span:nth-child(1) {
+      transform: rotateZ(45deg);
+      margin-top: 10px;
+      margin-left: 11px;
+      margin-bottom: 6px;
+    }
+
+    #toggle:checked + & > span:nth-child(2) {
+      display: none;
+    }
+
+    #toggle:checked + & > span:nth-child(3) {
+      transform: rotateZ(-45deg);
+      margin-top: -10px;
+      margin-left: 10px;
+    }
+  }
+
+  %columnFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+
+  .navigation {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background-color: $second-accent-color;
+    @extend %columnFlex;
+    transition: 0.3s linear;
+
+    #toggle:checked ~ .page-header & {
+      left: 0;
+    }
+  }
+
+  .nav-list {
+    @extend %columnFlex;
+  }
+}
+
 .page-header {
   border-bottom: 2px solid #f0a8a8;
 }
 
 .page-header__container {
   padding: 10px 15px;
+  @extend %centeredFlex;
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @extend %centeredFlex;
+  margin-left: auto;
 }
 
 .logo {
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  line-height: 25.14px;
+  line-height: 1.25;
   color: $title-text-color;
 
   display: inline-flex;
@@ -24,18 +96,18 @@
 
   & img {
     margin-right: 10px;
+    height: 50px;
   }
 }
 
-.nav-list {
-  @extend %centeredFlex;
-  margin-right: 40px;
-  margin-left: auto;
+// .nav-list {
+//   @extend %centeredFlex;
+//   margin-right: 40px;
 
-  &__item:not(:first-child) {
-    margin-left: 50px;
-  }
-}
+//   &__item:not(:first-child) {
+//     margin-left: 50px;
+//   }
+// }
 
 .nav-list__link {
   @extend %nav-link;
@@ -67,7 +139,7 @@
 
   &:hover,
   &:focus {
-    background-color: $second-accent-color;
+    background-color: #fff;
   }
 }
 

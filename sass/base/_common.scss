@@ -6,3 +6,32 @@ body {
   font-family: $main-font;
   font-weight: 400;
 }
+
+// 0-479 responsive mobile container
+.container {
+  width: 100%;
+  padding: 0 20px;
+  outline: 1px solid rgb(4, 0, 255);
+}
+
+// 480-767 adaptive mobile container
+@media screen and (min-width: $mobile) {
+  .container {
+    width: $mobile;
+    margin: 0 auto;
+  }
+}
+
+// 768-1199 adaptive tablet container
+@media screen and (min-width: $tablet) {
+  .container {
+    width: $tablet;
+  }
+}
+
+// 1200+ adaptive desktop container
+@media screen and (min-width: $desktop) {
+  .container {
+    width: $desktop;
+  }
+}

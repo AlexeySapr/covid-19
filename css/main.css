@@ -20,13 +20,10 @@
   color: #035755;
 }
 
-.nav-list {
+.page-header__container, .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -39,6 +36,31 @@ html {
 body {
   font-family: "Gelion", sans-serif;
   font-weight: 400;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  outline: 1px solid #0400ff;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 a {
@@ -99,6 +121,78 @@ img {
   src: url("../../fonts/gelionFont/GelionBold.woff") format("woff");
 }
 
+#toggle {
+  display: none;
+}
+
+.mobile-menu-label {
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+
+.mobile-menu-label span {
+  display: block;
+  height: 3px;
+  width: 30px;
+  background-color: #fb4c47;
+  margin: 5px 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .mobile-menu-label {
+    display: block;
+  }
+  #toggle:checked + .mobile-menu-label > span:nth-child(1) {
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    margin-top: 10px;
+    margin-left: 11px;
+    margin-bottom: 6px;
+  }
+  #toggle:checked + .mobile-menu-label > span:nth-child(2) {
+    display: none;
+  }
+  #toggle:checked + .mobile-menu-label > span:nth-child(3) {
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+  .navigation, .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+  .navigation {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    background-color: #ffeceb;
+    -webkit-transition: 0.3s linear;
+    transition: 0.3s linear;
+  }
+  #toggle:checked ~ .page-header .navigation {
+    left: 0;
+  }
+}
+
 .page-header {
   border-bottom: 2px solid #f0a8a8;
 }
@@ -108,20 +202,15 @@ img {
 }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-left: auto;
 }
 
 .logo {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 0.8rem;
   text-transform: uppercase;
-  line-height: 25.14px;
+  line-height: 1.25;
   color: #035755;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -133,15 +222,7 @@ img {
 
 .logo img {
   margin-right: 10px;
-}
-
-.nav-list {
-  margin-right: 40px;
-  margin-left: auto;
-}
-
-.nav-list__item:not(:first-child) {
-  margin-left: 50px;
+  height: 50px;
 }
 
 .nav-list__link--current {
@@ -173,7 +254,7 @@ img {
 }
 
 .contact-link:hover, .contact-link:focus {
-  background-color: #ffeceb;
+  background-color: #fff;
 }
 
 .main-section__title {
