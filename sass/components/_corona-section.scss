@@ -1,0 +1,86 @@
+.corona-section-image {
+  margin-bottom: 20px;
+}
+
+.corona-section-image img {
+  margin: 0 auto;
+}
+
+.corona-section__subtitle {
+  font-size: 0.9rem;
+}
+
+.corona-section__title {
+  font-size: 1.3rem;
+}
+
+.corona-section__text {
+  font-size: 0.8rem;
+}
+
+.corona-section__button {
+  @extend %buttonBase;
+
+  background-color: $btn-background;
+  padding: 20px 30px;
+  border-radius: 35px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: $subtitle-text-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 1px 20px 1px rgba(236, 11, 11, 0.78);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .corona-section__bg {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-image: url('../../images/Virus-4.1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 600px 10px;
+  }
+
+  .corona-section-image {
+    margin-bottom: 0;
+  }
+
+  .corona-section-content {
+    text-align: start;
+    max-width: 350px;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .corona-section__bg {
+    background-size: 25%;
+    background-position: 920px 155px;
+  }
+
+  .corona-section-image {
+    max-width: 530px;
+  }
+
+  .corona-section-content {
+    max-width: 510px;
+    margin-left: 0;
+  }
+
+  .corona-section__subtitle {
+    font-size: 1.3rem;
+  }
+
+  .corona-section__title {
+    font-size: 1.6rem;
+  }
+
+  .corona-section__text {
+    font-size: 1.1rem;
+  }
+}

@@ -14,6 +14,34 @@ body {
   outline: 1px solid rgb(4, 0, 255);
 }
 
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section__subtitle {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 1rem;
+  color: $subtitle-text-color;
+  margin-bottom: 10px;
+}
+
+.section__title {
+  font-family: $secondary-font;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: $title-text-color;
+  margin-bottom: 20px;
+}
+
+.section__text {
+  color: $description-text-color;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
 // 480-767 adaptive mobile container
 @media screen and (min-width: $mobile) {
   .container {
@@ -27,11 +55,21 @@ body {
   .container {
     width: $tablet;
   }
+
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 // 1200+ adaptive desktop container
 @media screen and (min-width: $desktop) {
   .container {
     width: $desktop;
+  }
+
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }

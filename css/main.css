@@ -29,6 +29,21 @@
           align-items: center;
 }
 
+.main-section__button, .corona-section__button {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-family: "Gelion", sans-serif;
+}
+
+.main-section__button:hover, .corona-section__button:hover, .main-section__button:focus, .corona-section__button:focus {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
 @-webkit-keyframes pulsing {
   0% {
     -webkit-transform: scale(0.5, 0.5);
@@ -166,6 +181,34 @@ body {
   outline: 1px solid #0400ff;
 }
 
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section__subtitle {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fa5652;
+  margin-bottom: 10px;
+}
+
+.section__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  font-size: 1.5rem;
+  color: #035755;
+  margin-bottom: 20px;
+}
+
+.section__text {
+  color: #4b4f51;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -177,11 +220,19 @@ body {
   .container {
     width: 768px;
   }
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+  }
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -441,12 +492,7 @@ img {
   }
 }
 
-.main-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.container.main-section__bg {
+.main-section__bg {
   background-image: url("../../images/Virus-3.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -464,50 +510,18 @@ img {
   text-align: center;
 }
 
-.main-section__subtitle {
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  color: #fa5652;
-  margin-bottom: 10px;
-}
-
-.main-section__title {
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 700;
-  line-height: 1;
-  font-size: 1.5rem;
-  color: #035755;
-  margin-bottom: 20px;
-}
-
-.main-section__text {
-  color: #4b4f51;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-}
-
-.button {
-  display: inline-block;
+.main-section__button {
   background-color: #fb4c47;
   padding: 25px 50px;
-  border: none;
-  outline: none;
   border-radius: 50px;
-  font-family: "Gelion", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
   color: #fff;
 }
 
-.button:hover, .button:focus {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+.main-section__button:hover, .main-section__button:focus {
   -webkit-box-shadow: 1px 1px 20px 1px rgba(236, 11, 11, 0.78);
           box-shadow: 1px 1px 20px 1px rgba(236, 11, 11, 0.78);
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
@@ -518,10 +532,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .main-section {
-    padding-top: 0;
-  }
-  .container.main-section__bg {
+  .main-section__bg {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -538,7 +549,7 @@ img {
     background-position-x: 340px;
     background-position-y: 32px;
   }
-  .container.main-section__bg::before {
+  .main-section__bg::before {
     content: '';
     width: 100px;
     height: 100px;
@@ -557,7 +568,7 @@ img {
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
-  .container.main-section__bg::after {
+  .main-section__bg::after {
     content: '';
     width: 70px;
     height: 70px;
@@ -582,7 +593,7 @@ img {
   .main-section-image img {
     width: 100%;
   }
-  .section-content {
+  .main-section-content {
     text-align: start;
     width: 650px;
     margin: auto;
@@ -599,10 +610,92 @@ img {
     font-size: 1.3rem;
     margin-bottom: 20px;
   }
-  .button {
+  .main-section__button {
     padding: 30px 70px;
     border-radius: 50px;
     font-size: 1.5rem;
+  }
+}
+
+.corona-section-image {
+  margin-bottom: 20px;
+}
+
+.corona-section-image img {
+  margin: 0 auto;
+}
+
+.corona-section__subtitle {
+  font-size: 0.9rem;
+}
+
+.corona-section__title {
+  font-size: 1.3rem;
+}
+
+.corona-section__text {
+  font-size: 0.8rem;
+}
+
+.corona-section__button {
+  background-color: rgba(250, 86, 82, 0.15);
+  padding: 20px 30px;
+  border-radius: 35px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fa5652;
+}
+
+.corona-section__button:hover, .corona-section__button:focus {
+  -webkit-box-shadow: 1px 1px 20px 1px rgba(236, 11, 11, 0.78);
+          box-shadow: 1px 1px 20px 1px rgba(236, 11, 11, 0.78);
+}
+
+@media screen and (min-width: 768px) {
+  .corona-section__bg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background-image: url("../../images/Virus-4.1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 600px 10px;
+  }
+  .corona-section-image {
+    margin-bottom: 0;
+  }
+  .corona-section-content {
+    text-align: start;
+    max-width: 350px;
+    margin-left: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .corona-section__bg {
+    background-size: 25%;
+    background-position: 920px 155px;
+  }
+  .corona-section-image {
+    max-width: 530px;
+  }
+  .corona-section-content {
+    max-width: 510px;
+    margin-left: 0;
+  }
+  .corona-section__subtitle {
+    font-size: 1.3rem;
+  }
+  .corona-section__title {
+    font-size: 1.6rem;
+  }
+  .corona-section__text {
+    font-size: 1.1rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
