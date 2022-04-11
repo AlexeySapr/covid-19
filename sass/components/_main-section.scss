@@ -1,9 +1,4 @@
-.main-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.container.main-section__bg {
+.main-section__bg {
   background-image: url('../../images/Virus-3.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -21,48 +16,19 @@
   text-align: center;
 }
 
-.main-section__subtitle {
-  font-family: $secondary-font;
-  font-weight: 700;
-  font-size: 1rem;
-  color: $subtitle-text-color;
-  margin-bottom: 10px;
-}
+.main-section__button {
+  @extend %buttonBase;
 
-.main-section__title {
-  font-family: $secondary-font;
-  font-weight: 700;
-  line-height: 1;
-  font-size: 1.5rem;
-  color: $title-text-color;
-  margin-bottom: 20px;
-}
-
-.main-section__text {
-  color: $description-text-color;
-  font-size: 0.9rem;
-  margin-bottom: 20px;
-}
-
-.button {
-  display: inline-block;
   background-color: #fb4c47;
   padding: 25px 50px;
-  border: none;
-  outline: none;
   border-radius: 50px;
-
-  font-family: $main-font;
   font-weight: 700;
   font-size: 1.2rem;
   color: #fff;
 
   &:hover,
   &:focus {
-    transform: scale(1.01);
     box-shadow: 1px 1px 20px 1px rgba(236, 11, 11, 0.78);
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
   }
 }
 
@@ -74,11 +40,7 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .main-section {
-    padding-top: 0;
-  }
-
-  .container.main-section__bg {
+  .main-section__bg {
     position: relative;
     display: flex;
     flex-direction: row-reverse;
@@ -128,7 +90,7 @@
     width: 100%;
   }
 
-  .section-content {
+  .main-section-content {
     text-align: start;
     width: 650px;
     margin: auto;
@@ -149,7 +111,7 @@
     margin-bottom: 20px;
   }
 
-  .button {
+  .main-section__button {
     padding: 30px 70px;
     border-radius: 50px;
     font-size: 1.5rem;

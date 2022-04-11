@@ -11,3 +11,17 @@
   display: flex;
   align-items: center;
 }
+
+%buttonBase {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-family: $main-font;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+  }
+}
