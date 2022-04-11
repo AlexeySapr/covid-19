@@ -8,10 +8,6 @@
   margin-bottom: 20px;
 }
 
-.main-section-image img {
-  width: 75%;
-}
-
 .section-content {
   text-align: center;
 }
@@ -36,6 +32,10 @@
   .main-section-image {
     position: relative;
     left: 50px;
+  }
+
+  .main-section-image img {
+    width: 75%;
   }
 }
 
