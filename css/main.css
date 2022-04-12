@@ -870,13 +870,18 @@ img {
   }
   .symptomps-section-card {
     height: 450px;
-    background-position: center;
+    background-image: url("../../images/Symptomps.png"), url("../../images/Virus-5.png"), url("../../images/Virus-6.png");
+    background-repeat: no-repeat;
+    background-size: 620px, 125px, 90px;
+    background-position: center, top 280px right -40px, top 7px left -10px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .symptomps-section-card {
     height: 650px;
+    background-size: 850px, 125px, 90px;
+    background-position: center, top 280px right 12px, top 7px left 95px;
   }
 }
 
