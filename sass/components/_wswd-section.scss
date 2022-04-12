@@ -62,3 +62,48 @@
   font-size: 0.8rem;
   color: $description-text-color;
 }
+
+.item-image {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: $tablet) {
+  .wswd-section-content {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wswd-list__item {
+    display: flex;
+    align-items: center;
+  }
+
+  .wswd-list__item:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+
+  .item-description {
+    grid-template-columns: 85px auto;
+    margin-bottom: 0;
+  }
+
+  .item-description__text {
+    max-width: 300px;
+  }
+
+  .item-image {
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .wswd-list__item {
+    justify-content: space-around;
+  }
+  .item-image {
+    max-width: 500px;
+    margin: 0;
+  }
+}

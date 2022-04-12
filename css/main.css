@@ -207,7 +207,6 @@ body {
 .section__text {
   color: #4b4f51;
   font-size: 0.9rem;
-  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 480px) {
@@ -949,5 +948,54 @@ img {
   line-height: 1.8;
   font-size: 0.8rem;
   color: #4b4f51;
+}
+
+.item-image {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .wswd-section-content {
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .wswd-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wswd-list__item:nth-child(2n) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .item-description {
+    -ms-grid-columns: 85px auto;
+        grid-template-columns: 85px auto;
+    margin-bottom: 0;
+  }
+  .item-description__text {
+    max-width: 300px;
+  }
+  .item-image {
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wswd-list__item {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .item-image {
+    max-width: 500px;
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
