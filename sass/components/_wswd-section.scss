@@ -1,0 +1,64 @@
+.wswd-section-content {
+  margin-bottom: 40px;
+}
+
+.wswd-section__subtitle {
+  font-size: 0.9rem;
+}
+
+.wswd-section__title {
+  font-size: 1.3rem;
+}
+
+.wswd-section__text {
+  font-size: 0.8rem;
+}
+
+.wswd-list__item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.item-description {
+  display: grid;
+  grid-template-columns: 65px auto;
+
+  margin-bottom: 40px;
+}
+
+.item-description__number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: $btn-background;
+
+  font-family: $secondary-font;
+  font-weight: 700;
+  color: $subtitle-text-color;
+}
+
+.item-description__text {
+  margin-top: 6px;
+}
+
+.item__title {
+  font-family: $main-font;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  color: $title-text-color;
+  margin-bottom: 10px;
+}
+
+.item__text {
+  font-family: $main-font;
+  font-weight: 400;
+  line-height: 1.8;
+  font-size: 0.8rem;
+  color: $description-text-color;
+}
