@@ -1,0 +1,42 @@
+.symptomps-section-content {
+  margin-bottom: 40px;
+}
+
+.symptomps-section__subtitle {
+  font-size: 0.9rem;
+}
+
+.symptomps-section__title {
+  font-size: 1.3rem;
+}
+
+.symptomps-section__text {
+  font-size: 0.8rem;
+}
+
+.symptomps-section-card {
+  width: 100%;
+  height: 350px;
+  background-image: url('../../images/Symptomps.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: $tablet) {
+  .symptomps-section-content {
+    max-width: 470px;
+    margin-bottom: 0;
+    margin: 0 auto;
+  }
+
+  .symptomps-section-card {
+    height: 450px;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .symptomps-section-card {
+    height: 650px;
+  }
+}

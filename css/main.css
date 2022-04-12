@@ -722,6 +722,7 @@ img {
   -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.11);
           box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.11);
   border-radius: 5px;
+  background-color: #fff;
 }
 
 .сontagion-list__item::after {
@@ -770,6 +771,12 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .сontagion-section__bg {
+    background-image: url("../../images/Virus-3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
   .сontagion-section-content {
     max-width: 470px;
     margin: 0 auto 40px;
@@ -780,6 +787,13 @@ img {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 40px;
+  }
+  .сontagion-list__item {
+    border-radius: 10px;
+  }
+  .сontagion-list__item::after {
+    bottom: 2px;
+    height: 5px;
   }
   .сontagion-list__item:last-child {
     -ms-grid-column: 1;
@@ -795,6 +809,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .сontagion-section__bg {
+    background-size: 75%;
+    background-position: 50px 20px;
+  }
   .сontagion-section-content {
     margin: 0 auto 60px;
   }
@@ -818,6 +836,48 @@ img {
     width: 320px;
     margin: 0 auto;
     margin-bottom: 0;
+  }
+}
+
+.symptomps-section-content {
+  margin-bottom: 40px;
+}
+
+.symptomps-section__subtitle {
+  font-size: 0.9rem;
+}
+
+.symptomps-section__title {
+  font-size: 1.3rem;
+}
+
+.symptomps-section__text {
+  font-size: 0.8rem;
+}
+
+.symptomps-section-card {
+  width: 100%;
+  height: 350px;
+  background-image: url("../../images/Symptomps.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .symptomps-section-content {
+    max-width: 470px;
+    margin-bottom: 0;
+    margin: 0 auto;
+  }
+  .symptomps-section-card {
+    height: 450px;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .symptomps-section-card {
+    height: 650px;
   }
 }
 /*# sourceMappingURL=main.css.map */
