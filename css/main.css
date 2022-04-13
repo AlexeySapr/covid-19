@@ -269,21 +269,21 @@ img {
   font-family: 'Gelion';
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/gelionFont/GelionRegular.woff") format("woff");
+  src: url("/fonts/gelionFont/GelionRegular.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Gelion';
   font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/gelionFont/GelionMedium.woff") format("woff");
+  src: url("./../fonts/gelionFont/GelionMedium.woff") format("woff");
 }
 
 @font-face {
   font-family: 'Gelion';
   font-style: normal;
   font-weight: 600;
-  src: url("../../fonts/gelionFont/GelionSemiBold.woff") format("woff");
+  src: url("fonts/gelionFont/GelionSemiBold.woff") format("woff");
 }
 
 @font-face {
