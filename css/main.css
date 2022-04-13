@@ -1004,6 +1004,10 @@ img {
   }
 }
 
+.question-section {
+  padding-bottom: 0;
+}
+
 .question-section__bg {
   background-color: #ffe1e2;
 }
@@ -1089,5 +1093,61 @@ img {
     font-size: 1.2rem;
     margin: 13px 0;
   }
+}
+
+.page-footer {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: #ffe1e2;
+}
+
+.page-footer__container {
+  text-align: center;
+}
+
+.page-footer__nav-list {
+  display: none;
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social-list__item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.social-list__link {
+  color: #4b4f51;
+  font-size: 2rem;
+}
+
+.fa-facebook-f:hover, .fa-facebook-f:focus {
+  color: #0e8ef1;
+}
+
+.fa-youtube:hover, .fa-youtube:focus {
+  color: red;
+}
+
+.fa-vimeo-v:hover, .fa-vimeo-v:focus {
+  color: #26b9f1;
+}
+
+.fa-twitter:hover, .fa-twitter:focus {
+  color: #1da1f2;
 }
 /*# sourceMappingURL=main.css.map */

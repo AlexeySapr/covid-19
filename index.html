@@ -15,6 +15,11 @@
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <!-- Подключение шрифта font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Подключение собственного файла стилей -->
   <link rel="stylesheet" href="./css/main.min.css" />
   <title>Главная</title>
@@ -233,7 +238,7 @@
     </section>
 
     <!-- Cекция есть вопросы?-->
-    <section class="section">
+    <section class="section question-section">
       <div class="container question-section__bg">
         <h2 class="question-title">Have Question in mind? <br><span class="question-title__bold">Let us help you</span>
         </h2>
@@ -254,15 +259,38 @@
   <!-- Подвал страницы -->
   <footer class="page-footer">
     <div class="container">
-      <div class="page-header__container">
+      <div class="page-footer__container">
         <a href="./index.html" class="logo"><img src="./images/Logo.svg" alt="logo">Covid - 19</a>
 
-        <nav class="navigation">
-          <ul class="nav-list">
+        <nav class="page-footer__navigation">
+          <ul class="page-footer__nav-list">
             <li class="nav-list__item"><a class="nav-list__link--current" href="#">Overview</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="#">Contagion</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="#">Symptoms</a></li>
             <li class="nav-list__item"><a class="nav-list__link" href="#">Prevention</a></li>
+          </ul>
+
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i></a>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.youtube.com/">
+                <i class="fab fa-youtube"></i></a>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://vimeo.com/">
+                <i class="fab fa-vimeo-v"></i></a>
+            </li>
+
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://twitter.com/">
+                <i class="fab fa-twitter"></i></a>
+            </li>
+
           </ul>
 
           <a href="#" class="contact-link">Contact</a>

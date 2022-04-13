@@ -1,3 +1,7 @@
+.question-section {
+  padding-bottom: 0;
+}
+
 .question-section__bg {
   background-color: $background;
 }
@@ -43,7 +47,7 @@
 .question-button {
   @extend %buttonBase;
 
-  background-color: #fb4c47;
+  background-color: $first-accent-color;
   padding: 10px 20px;
   border-radius: 19px;
   font-weight: 500;
