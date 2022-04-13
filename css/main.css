@@ -1057,4 +1057,35 @@ img {
   -webkit-box-shadow: 1px 1px 20px 1px rgba(236, 11, 11, 0.78);
           box-shadow: 1px 1px 20px 1px rgba(236, 11, 11, 0.78);
 }
+
+@media screen and (min-width: 1200px) {
+  .question-title {
+    font-size: 2rem;
+  }
+  .form-container {
+    width: 500px;
+    margin: 40px auto;
+  }
+  .question-form {
+    margin-left: 15px;
+  }
+  .question-input {
+    padding: 20px 15px 20px 30px;
+    font-size: 1.2rem;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+  }
+  .question-button-container {
+    width: 115px;
+    height: 72px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+  }
+  .question-button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    margin: 13px 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
