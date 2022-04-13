@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.main-section__text {
+  margin-bottom: 35px;
+}
+
 .main-section__button {
   @extend %buttonBase;
 
@@ -108,7 +112,7 @@
 
   .main-section__text {
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
   }
 
   .main-section__button {

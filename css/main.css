@@ -179,7 +179,6 @@ body {
 .container {
   width: 100%;
   padding: 0 20px;
-  outline: 1px solid #0400ff;
 }
 
 .section {
@@ -506,6 +505,10 @@ img {
   text-align: center;
 }
 
+.main-section__text {
+  margin-bottom: 35px;
+}
+
 .main-section__button {
   background-color: #fb4c47;
   padding: 25px 50px;
@@ -607,7 +610,7 @@ img {
   }
   .main-section__text {
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
   }
   .main-section__button {
     padding: 30px 70px;
@@ -634,6 +637,7 @@ img {
 
 .corona-section__text {
   font-size: 0.8rem;
+  margin-bottom: 35px;
 }
 
 .corona-section__button {
@@ -695,6 +699,7 @@ img {
   }
   .corona-section__text {
     font-size: 1.1rem;
+    margin-bottom: 40px;
   }
 }
 
