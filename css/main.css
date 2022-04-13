@@ -1006,9 +1006,6 @@ img {
 
 .question-section {
   padding-bottom: 0;
-}
-
-.question-section__bg {
   background-color: #ffe1e2;
 }
 
@@ -1149,5 +1146,29 @@ img {
 
 .fa-twitter:hover, .fa-twitter:focus {
   color: #1da1f2;
+}
+
+.copyrights {
+  margin-top: 20px;
+  text-align: center;
+  color: #4b4f51;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__container,
+  .page-footer__navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .page-footer__navigation {
+    margin-left: auto;
+  }
+  .footer-contact-link {
+    margin-left: 50px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

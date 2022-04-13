@@ -59,3 +59,25 @@
     color: #1da1f2;
   }
 }
+
+.copyrights {
+  margin-top: 20px;
+  text-align: center;
+  color: $description-text-color;
+}
+
+@media screen and (min-width: $tablet) {
+  .page-footer__container,
+  .page-footer__navigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .page-footer__navigation {
+    margin-left: auto;
+  }
+
+  .footer-contact-link {
+    margin-left: 50px;
+  }
+}
