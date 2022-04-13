@@ -17,7 +17,7 @@
 .symptomps-section-card {
   width: 100%;
   height: 350px;
-  background-image: url('../../images/Symptomps.png');
+  background-image: url('./../images/Symptomps.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -32,8 +32,8 @@
   .symptomps-section-card {
     height: 450px;
 
-    background-image: url('../../images/Symptomps.png'),
-      url('../../images/Virus-5.png'), url('../../images/Virus-6.png');
+    background-image: url('./../images/Symptomps.png'),
+      url('./../images/Virus-5.png'), url('./../images/Virus-6.png');
     background-repeat: no-repeat;
     background-size: 620px, 125px, 90px;
     background-position: center, top 280px right -40px, top 7px left -10px;

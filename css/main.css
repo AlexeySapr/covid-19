@@ -492,7 +492,7 @@ img {
 }
 
 .main-section__bg {
-  background-image: url("../../images/Virus-3.png");
+  background-image: url("./../images/Virus-3.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -555,7 +555,7 @@ img {
     content: '';
     width: 100px;
     height: 100px;
-    background-image: url("../../images/Virus-2.png");
+    background-image: url("./../images/Virus-2.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -574,7 +574,7 @@ img {
     content: '';
     width: 70px;
     height: 70px;
-    background-image: url("../../images/Virus-1.png");
+    background-image: url("./../images/Virus-1.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
@@ -664,7 +664,7 @@ img {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    background-image: url("../../images/Virus-4.1.png");
+    background-image: url("./../images/Virus-4.1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 600px 10px;
@@ -776,7 +776,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .сontagion-section__bg {
-    background-image: url("../../images/Virus-3.png");
+    background-image: url("./../images/Virus-3.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -862,7 +862,7 @@ img {
 .symptomps-section-card {
   width: 100%;
   height: 350px;
-  background-image: url("../../images/Symptomps.png");
+  background-image: url("./../images/Symptomps.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -875,7 +875,7 @@ img {
   }
   .symptomps-section-card {
     height: 450px;
-    background-image: url("../../images/Symptomps.png"), url("../../images/Virus-5.png"), url("../../images/Virus-6.png");
+    background-image: url("./../images/Symptomps.png"), url("./../images/Virus-5.png"), url("./../images/Virus-6.png");
     background-repeat: no-repeat;
     background-size: 620px, 125px, 90px;
     background-position: center, top 280px right -40px, top 7px left -10px;
